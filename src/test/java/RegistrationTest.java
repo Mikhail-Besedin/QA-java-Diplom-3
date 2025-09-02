@@ -13,7 +13,6 @@ import static org.junit.Assert.assertTrue;
 @Feature("Регистрация пользователя")
 public class RegistrationTest extends BaseTest {
     private User user;
-    private ApiClient apiClient;
     private String accessToken;
 
     @Before

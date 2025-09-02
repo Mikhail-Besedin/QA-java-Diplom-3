@@ -24,7 +24,7 @@ public class PersonalAccountPage extends BasePage {
     }
     @Step("Проверяем наличие отображения кнопки Профиль применяя ожидание, чтобы элемент стал видимым ")
     public boolean isProfileLinkDisplayed() {
-        return checkBoolUntilNotInvisabilityElement(profileLink);
+        return checkBoolUntilNotInvisibilityElement(profileLink);
     }
     @Step("Кликаем на кнопку Выход ")
     public void clickLogoutButton() {

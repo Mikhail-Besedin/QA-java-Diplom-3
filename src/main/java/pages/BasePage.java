@@ -29,7 +29,7 @@ public abstract class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
     @Step("Получаем булевое значение видимости элемента ")
-    protected boolean checkBoolUntilNotInvisabilityElement(By locator) {
+    protected boolean checkBoolUntilNotInvisibilityElement(By locator) {
         waitForElementVisible(locator);
         return driver.findElement(locator).isDisplayed();
     }
@@ -50,5 +50,4 @@ public abstract class BasePage {
         waitForElementVisible(locator);
         driver.findElement(locator).sendKeys(text);
     }
-
 }

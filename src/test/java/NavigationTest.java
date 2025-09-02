@@ -12,7 +12,6 @@ import static org.junit.Assert.assertEquals;
 @Feature("Навигация")
 public class NavigationTest extends BaseTest {
     private User user;
-    private ApiClient apiClient;
     private String accessToken;
 
     @Before

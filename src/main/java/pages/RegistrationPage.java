@@ -35,7 +35,7 @@ public class RegistrationPage extends BasePage {
     }
     @Step("проверяем наличие ошибки Некорректный пароль ")
     public boolean isPasswordErrorDisplayed() {
-        return checkBoolUntilNotInvisabilityElement(passwordError);
+        return checkBoolUntilNotInvisibilityElement(passwordError);
     }
     @Step("Заполняем данные для регистрации пользователя и кликаем зарегистрироваться ")
     public void register(String name, String email, String password) {

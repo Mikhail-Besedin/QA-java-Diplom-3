@@ -41,7 +41,7 @@ public class LoginPage extends BasePage {
 
     @Step("Проверяем наличие отображения кнопки Войти ")
     public boolean isLoginButtonDisplayed(){
-        return checkBoolUntilNotInvisabilityElement(loginButton);
+        return checkBoolUntilNotInvisibilityElement(loginButton);
     }
     @Step("Вводим логин и пароль для авторизации ")
     public void login(String email, String password) {
